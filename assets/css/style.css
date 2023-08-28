@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.circle {
+    background: #000;
+    border: 2px dashed red;
+    border-radius: 50%;
+    width: 300px;
+    margin: auto;
+    height: 400px;
+    animation-name: pankaj;
+    transform: translate(0%, 50%);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.line {
+    max-width: 1220px;
+    height: 10px;
+    margin-top: 300px;
+    background-color: gray;
+    animation: line;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes pankaj {
+    10% {
+        border-radius: 30% 70% 70% 30% / 30% 24% 76% 70%;
+        border: 2px dashed red;
+        background: gray;
+        transform: translate(0%, 3%);
+    }
+
+    20% {
+        border-radius: 30% 70% 78% 22% / 30% 24% 76% 70%;
+        border: 8px solid yellow;
+        background: #863b3b;
+        transform: translate(-95%, 75%);
+    }
+
+    30% {
+        border-radius: 68% 32% 78% 22% / 62% 24% 76% 38%;
+        border: 4px dotted green;
+        background: #30a687;
+        transform: translate(0%, 3%);
+    }
+
+    40% {
+        border-radius: 70% 30% 39% 61% / 43% 24% 76% 57%;
+        border: 8px solid yellow;
+        background: #c32087;
+        transform: translate(95%, 75%);
+    }
+
+    50% {
+        border-radius: 29% 71% 77% 23% / 43% 79% 21% 57%;
+        border: 2px dashed red;
+        background: #c32087;
+        transform: translate(0%, 3%);
+    }
+
+    60% {
+        border-radius: 77% 23% 21% 79% / 43% 83% 17% 57%;
+        border: 8px solid yellow;
+        background: #ee7d04;
+        transform: translate(-95%, 75%);
+    }
+
+    70% {
+        border-radius: 77% 23% 80% 20% / 43% 83% 17% 57%;
+        border: 4px dotted green;
+        background: #4e63fc;
+        transform: translate(0%, 3%);
+    }
+
+    80% {
+        border-radius: 86% 14% 86% 14% / 12% 83% 17% 88%;
+        border: 8px solid yellow;
+        background: #4d0000;
+        transform: translate(95%, 75%);
+    }
+
+    90% {
+        border-radius: 8% 92% 15% 85% / 84% 12% 88% 16%;
+        border: 8px dashed red;
+        background: #ffa8a8;
+        transform: translate(0%, 3%);
+    }
+
+    100% {
+        border-radius: 54% 46% 74% 26% / 13% 65% 35% 87%;
+        border: 8px solid yellow;
+        background: #ed0000;
+        transform: translate(-95%, 75%);
+    }
+
+}
+
+@keyframes line {
+    10% {
+        background-color: gray;
+
+    }
+
+    20% {
+        background-color: #863b3b;
+    }
+
+    30% {
+        background-color: #30a687;
+    }
+
+    40% {
+        background-color: #c32087;
+    }
+
+    50% {
+        background-color: #ee7d04;
+    }
+
+    60% {
+        background-color: #4e63fc;
+    }
+
+    70% {
+        background-color: #ff3535;
+    }
+
+    80% {
+        background-color: #4d0000;
+    }
+
+    90% {
+        background-color: #ffa8a8;
+    }
+
+    100% {
+        background-color: #ed0000;
+    }
+
+}
